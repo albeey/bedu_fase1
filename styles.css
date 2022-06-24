@@ -10,6 +10,7 @@ h1 {
   color: #025157;
   text-align: center;
   font-family: 'Alegreya', serif;
+  font-size: 60px;
 }
 
 p {
@@ -59,14 +60,13 @@ li {
 }
 
 .navbar {
-  width: 60%;
   text-align: center;
   color: #025157;
   font-weight: 500;
 }
 
 .actions {
-  width: 15%;
+  width: 15%; /* reto 06 remover */
   text-align: right;
   font-size: 14px;
   font-weight: 600;
@@ -78,6 +78,7 @@ li {
 
 .actions a {
   color: #67b54b;
+  text-decoration: none;
 }
 
 .actions button {
@@ -91,6 +92,10 @@ li {
 .main {
   margin-top: 285px;
   text-align: center;
+}
+
+.main img {
+  width: 50%;
 }
 
 .publish {
@@ -130,6 +135,7 @@ li {
 iframe {
   display: flex;
   margin: auto;
+  max-width: 100%;
 }
 
 .explanatory-video {
@@ -139,7 +145,7 @@ iframe {
 }
 
 .explanatory-video img {
-  width: 120px;
+  width: 50px;
   margin-top: 10px;
 }
 
@@ -195,4 +201,62 @@ iframe {
   color: #67b54b;
   font-weight: 600;
   text-decoration: none;
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .main {
+    margin-top: 185px;
+  }
+
+  .banner > img {
+    width: 100%;
+  }
+
+  .publish > form {
+    flex-direction: column;
+  }
+
+  .publish > form > div {
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  .publish > form > div > input {
+    width: 65%;
+  }
+
+  .promo {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .explanatory-video > video {
+    width: 100%;
+  }
+
+  .publish > h3 {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+
+  /* reto 4 */
+  .features {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .feature-card {
+    padding: 8%;
+  }
+
+  .feature-card .info-col {
+    width: 100%;
+  }
+
+  .feature-card .img-col {
+    display: none;
+  }
 }
