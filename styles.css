@@ -203,7 +203,106 @@ iframe {
   text-decoration: none;
 }
 
+/* Ejemplo 2 */
+.success-stories {
+  background-color: #a1d683;
+  padding: 5% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.success-stories .overview {
+  flex: 2;
+  padding-right: 100px;
+}
+
+.success-stories .overview h2 {
+  font-family: "Alegreya", serif;
+  font-size: 51px;
+  line-height: 61px;
+  color: #025157;
+}
+
+.success-stories .overview p {
+  color: #343434;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.success-stories .overview button {
+  font-size: 14px;
+  padding: 12px 12px 6px 12px;
+  border-radius: 8px;
+  height: 45px;
+  font-weight: 600;
+  margin-left: 0;
+}
+
+.success-stories .overview img {
+  width: 500px;
+  max-width: 100%;
+}
+
+/* RETO 2 */
+.carousel-indicators {
+  bottom: -40px;
+}
+
+.carousel-inner {
+  max-width: 350px; 
+}
+
+.carousel-item .circle {
+  background: #f9da73;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 65%;
+  top: 45%;
+}
+
+.carousel-item .circle img {
+  width: 75%;
+}
+
+.carousel-item .card .card-img-top {
+  height: 350px;
+}
+
+.carousel-item .card h6 {
+  color: #025157;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.carousel-item .card h5 {
+  font-size: 23px;
+  margin: 20px 0;
+}
+
+.carousel-item .card p {
+  font-size: 1rem;
+}
+
+.carousel-item .card .btn {
+  width: 100%;
+  background-color: #025157;
+  font-weight: 700;
+}
+
 @media (max-width: 650px) {
+  /* Ejemplo 1: agregar */
+  .actions,
+  .navbar {
+    text-align: center;
+  }
+
   h1 {
     font-size: 30px;
   }
@@ -243,7 +342,6 @@ iframe {
     line-height: 1.2;
   }
 
-  /* reto 4 */
   .features {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -258,5 +356,25 @@ iframe {
 
   .feature-card .img-col {
     display: none;
+  }
+
+  /* RETO 3 AGREGAR */
+  .success-stories {
+    flex-direction: column;
+  }
+    
+}
+
+/* Ejemplo 1: agregar */
+@media (max-width: 991px) {
+  .actions,
+  .navbar {
+    text-align: center;
+  }
+
+  /* RETO 3 AGREGAR */
+  .success-stories {
+    flex-direction: column;
+    padding: 5% 15px;
   }
 }
